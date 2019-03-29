@@ -1,0 +1,129 @@
+@import "libs";
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "general/fonts";
+@import "general/base";
+@import "../blocks/blocks";
+$block-height: 700px;
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+h1 {
+  font-size: 72px;
+}
+h1 + p {
+  font-size: 30px;
+}
+h2 {
+  font-size: 24px;
+}
+p {
+  font-size: 36px;
+}
+a {
+  font-size: 18px;
+  text-decoration: none;
+}
+.btn{
+  border-width: 1.87px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-top-right-radius: 40px 40px;
+  border-top-left-radius: 40px 40px;
+  border-bottom-right-radius: 40px 40px;
+  border-bottom-left-radius: 40px 40px;
+  text-decoration: none;
+  padding: 10px 15px;
+  color: white;
+}
+.grid {
+  display: grid;
+  grid-template-areas: "a a a a" "a a a a" "b b c c" "d e f g" "h h j i" "m m n n";
+}
+.grid-item {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.block-content{
+  width: 70%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.block-content-sml{
+  width: 40%;
+}
+.block-content-left{
+  padding-left: 150px;
+}
+.block-content-right{
+  padding-left: 50px;
+}
+.grid-item-main {
+  background-image: url(../img/bg-main.png);
+  grid-area: a;
+  height: 966px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.grid-item-red {
+  background-image: url(../img/bg-red.png);
+  grid-area: b;
+  height: 542px;
+}
+.grid-item-lgray {
+  background-color: #f3f1ef;
+  grid-area: c;
+}
+.grid-item-pic1 {
+  background-image: url(../img/bg-one.png);
+  grid-area: d;
+  height: $block-height;
+}
+.grid-item-pic2 {
+  background-image: url(../img/bg-two.png);
+  grid-area: e;
+  height: $block-height;
+}
+.grid-item-pic3 {
+  background-image: url(../img/bg-three.png);
+  grid-area: f;
+
+}
+.grid-item-pic4 {
+  background-image: url(../img/bg-four.png);
+  grid-area: g;
+  height: $block-height;
+}
+.grid-item-blue-text {
+  grid-area: h;
+}
+.grid-item-pic5 {
+  background-image: url(../img/bg-five.png);
+  grid-area: j;
+  height: $block-height;
+}
+.grid-item-bluebg {
+  grid-area: i;
+  height: $block-height;
+}
+.grid-item-blue {
+  background-color: #3f729b;
+  color: #fff;
+}
+.grid-item-green {
+  background-color: #2ebd59;
+  color: #fff;
+  grid-area: m;
+  height: $block-height;
+}
+.grid-item-gray {
+  background-color: #282b2f;
+  color: #fff;
+  grid-area: n;
+  height: $block-height;
+}
